@@ -1,0 +1,75 @@
+.navbar-brand  span{
+	color: #fed136;
+	font-size:32px;
+	font-weight:700;
+	letter-spacing:0.1em;
+    font-family: 'Akronim', cursive;
+}
+.navbar-brand {
+	color: rgb(0, 0, 0);
+	font-size:25px;
+    font-family: 'Akronim', cursive;
+	font-weight:700;
+	letter-spacing:0.1em;
+	
+}
+
+.navbar-nav .nav-item .nav-link{
+	padding: .5em .8em!important;
+	font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+	color: rgb(255, 255, 255);
+   font-family: 'Gothic A1', sans-serif;
+}
+.navbar-nav .nav-item .nav-link:hover{color:#fed136;}
+.navbar-expand-md .navbar-nav{
+	color: rgb(0, 89, 255);
+}
+
+nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
+    -moz-transition: padding-top .3s,padding-bottom .3s;
+    transition: padding-top .3s,padding-bottom .3s;
+    border: none;
+	}
+	
+/*need to edit*/
+
+ .shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+	background-color: #212529;
+	height: 80px;
+	color: rgb(5, 30, 255);
+ }
+
+
+@media (max-width:500px)
+{
+	.navbar-nav{
+		background-color:#000;
+		border-top:3px solid #fed136;
+		color:rgb(241, 7, 7);
+		z-index:1;
+		margin-top:5px;
+	}
+	.navbar-nav .nav-item .nav-link{
+	padding: 0.7em 1em!important;
+	font-size: 100%;
+	font-weight: 500;
+	background: black;
+	}
+
+}
+.active{
+    font-weight: bold;
+    font-style: italic;
+    background: #2196f3;
+}
+
+.nav-link:hover{
+    font-weight: bold;
+    font-style: italic;
+    background: #2196f3;
+}
+
