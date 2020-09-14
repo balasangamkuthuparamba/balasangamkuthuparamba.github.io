@@ -1,3 +1,11 @@
+.bar{
+    width: 30px;
+    background-color: white;
+    border-radius: 10px;
+    height: 3px;
+    margin: 5px 0;
+ }
+
 .navbar-brand  span{
 	color: #fed136;
 	font-size:32px;
