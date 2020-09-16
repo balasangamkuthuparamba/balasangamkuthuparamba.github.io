@@ -10,6 +10,10 @@ html{
     margin-top: 65px;
 }
 
+.head span{
+  font-family: 'Chilanka', cursive;
+  color: #fed136;
+}
 
 .heading{
   text-align: center;

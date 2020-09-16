@@ -26,3 +26,23 @@ $(document).on("scroll", function(){
     }, 3000);
     
   });
+
+
+
+  $("#submit-form").submit((e) => {
+    e.preventDefault()
+    $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbyc4FKpmhdwGEW8fWcXEeZtBmc0485iAE3BRkhT/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+        success: function (response) {
+            alert("Form submitted successfully")
+            window.location.reload()
+            //window.location.href="https://google.com"
+        },
+        error: function (err) {
+            alert("Something Error")
+
+        }
+    })
+})
