@@ -30,7 +30,7 @@
 	color: rgb(255, 255, 255);
    font-family: 'Gothic A1', sans-serif;
 }
-.navbar-nav .nav-item .nav-link:hover{color:#fed136;}
+.navbar-nav .nav-item .nav-link:hover{color:#000000;}
 .navbar-expand-md .navbar-nav{
 	color: rgb(0, 89, 255);
 }
@@ -41,23 +41,66 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     border: none;
 	}
 	
-/*need to edit*/
-
- .shrink {
-    padding-top: 0;
-    padding-bottom: 0;
-	background-color: #212529;
-	height: 80px;
-	color: rgb(5, 30, 255);
- }
-
-
+	nav.navbar ul li a {
+		position: relative;
+	  }
+	  nav.navbar ul li a:after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 0%;
+		content: '.';
+		color: transparent;
+		height: 1px;
+	  }
+	  
+	  
+	  nav.navbar ul li a {
+		transition: all 2s;
+	  }
+	  
+	  nav.navbar ul li a:after {
+		text-align: left;
+		content: '.';
+		margin: 0;
+		opacity: 0;
+	  }
+	  nav.navbar ul li a:hover {
+		color: rgb(0, 0, 0);
+		z-index: 1;
+	  }
+	  nav.navbar ul li a:hover:after {
+		z-index: -10;
+		animation: navbar .8s forwards;
+		-webkit-animation: navbar .8s forwards;
+		-moz-animation: navbar .8s forwards;
+		opacity: 1;
+	  }
+	  
+	  
+	  /* Keyframes */
+	  @keyframes navbar {
+		0% {
+		  width: 0%;
+		  height: 1px;
+		}
+		50% {
+		  width: 100%;
+		  height: 1px;
+		}
+		100% {
+		  width: 100%;
+		  height: 100%;
+		  background: rgb(255, 255, 255);
+		}
+	  }
+	  
 @media (max-width:500px)
 {
 	.navbar-nav{
-		background-color:#000;
 		border-top:3px solid #fed136;
-		color:rgb(241, 7, 7);
 		z-index:1;
 		margin-top:5px;
 	}
@@ -69,15 +112,5 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	}
 
 }
-.active{
-    font-weight: bold;
-    font-style: italic;
-    background: #2196f3;
-}
 
-.nav-link:hover{
-    font-weight: bold;
-    font-style: italic;
-    background: #2196f3;
-}
 
