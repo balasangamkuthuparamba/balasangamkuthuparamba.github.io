@@ -249,6 +249,10 @@ body {
     grid-gap: 1rem;
   }
   
+  footer h4{
+    font-size: 6px;
+  }
+
 }
 
 @media(max-width:425px){
@@ -261,7 +265,7 @@ body {
   }
   .head{
     font-size: 45px;
-  }
+  }  
 }
 
 

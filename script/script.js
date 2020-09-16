@@ -36,7 +36,7 @@ $(document).on("scroll", function(){
         data: $("#submit-form").serialize(),
         method: "post",
         success: function (response) {
-            alert("Form submitted successfully")
+            alert("Message submitted successfully")
             window.location.reload()
             //window.location.href="https://google.com"
         },
