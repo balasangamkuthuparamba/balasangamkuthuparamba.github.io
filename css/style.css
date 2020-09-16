@@ -342,7 +342,7 @@ body {
 }
 
 .ctn-preloader .loader-section {
-  background-color: #ffffff;
+  background: #ffffff;
   height: 100%;
 	position: fixed;
   top: 0;
